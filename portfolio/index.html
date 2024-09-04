@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tab&ibad.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <title>Ahmed Fathy</title>
+</head>
+<body>
+    <header>
+        <!--                       <i class="fa-solid fa-bars"></i>    <i class="fa-solid fa-xmark" onclick="closedmenu()"></i>-->
+        <a href="#" class="logo">A.Fathy</a>
+        <nav class="navigation">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D8A444"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <ul >
+                <li class="hideOnMobile"><a href="#Home">Home</a></li>
+                <li class="hideOnMobile"><a href="#About">About</a></li>
+                <li class="hideOnMobile"><a href="#Skills">Skills</a></li>
+                <li class="hideOnMobile"><a href="#Projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D8A444"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    </header>
+    <!-- home -->
+    <section class="main" id="Home">
+        <div>
+            <h2>Hello, I'm Ahmed<br><span>Engineering student</span></h2>
+            <!-- <h3>Everything is possible but , <br> time makes a difference .</h3> -->
+            <a href="#Projects" class="mainBottom">view my work</a>
+            <div class="social_icon">
+                <a href="https://www.linkedin.com/in/ahmed-fathy-790a3b307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100011312980814&mibextid=JRoKGi"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ahmed_fathy_9?igsh=cHR2a21oNzJ1Zzhv"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    <!--about me  -->
+    </section>
+    <section class="About" id="About">
+        <h2 class="title">About me:</h2>
+        <div class="content1">
+            Undergraduate student majoring in Communications and Computer Engineering, poised to leverage technical knowledge and communication skills to contribute effectively to the technology sector. Proficient in both the technical aspects of engineering and the strategic communication required to convey complex ideas to diverse audiences Eager to apply classroom learning in real-world settings,Iam adept at problem-solving and collaborating within multidisciplinary teams. I possess a strong foundation in
+            <strong>computer programming , web development , networking and communication theory </strong>
+            and am committed to continuous learning and staying abreast of emerging technologies.
+        </div>
+    </section>
+    <!-- Skills -->
+    <section class="skills" id="Skills">
+        <h2 class="title">Skills</h2>
+        <div class="skills_content">
+            <img width="120" height="120" src="https://img.icons8.com/color/120/python.png" alt="python"/>
+            <img width="120" height="120" src="https://img.icons8.com/color/120/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>
+            <img width="120" height="120" src="https://img.icons8.com/color/120/java-coffee-cup-logo.png" alt="java-coffee-cup-logo"/>
+            <img width="120" height="120" src="https://img.icons8.com/color/120/html-5.png" alt="html-5"/>
+            <img width="120" height="120" src="https://img.icons8.com/color/120/css3.png" alt="css3"/>
+            <img width="120" height="120" src="https://img.icons8.com/color/120/microsoft-office-2019.png" alt="microsoft-office-2019"/>
+        </div>
+    </section>
+    <!-- projects -->
+    <section class="Projects" id="Projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="Project_card">
+                <div class="Project_image">
+                    <img src="photos/power11.png">
+                </div>
+                <div class="Project_info">
+                    <p class="Project_category">power supply that can provide DC voltage ranging from 1.2 – 30 V. </p>
+                    <strong class="Project_title ">
+                        <span>Power supply</span>
+                        <a href="DC Power Supply Project.pdf" class="more_details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="Project_card">
+                <div class="Project_image">
+                    <img src="photos/Movies and series platform.jpg">
+                </div>
+                <div class="Project_info">
+                    <p class="Project_category">Movie platform with professional login system</p>
+                    <strong class="Project_title ">
+                        <span>Movies platform</span>
+                        <a href="https://www.linkedin.com/posts/ahmedosama29_github-iizeex1netflix-activity-7195133008826273792-Tzoy?utm_source=share&utm_medium=member_desktop" class="more_details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="Project_card">
+                <div class="Project_image">
+                    <img src="photos/fotor-ai-202408253138.jpg">
+                </div>
+                <div class="Project_info">
+                    <p class="Project_category">Portfolio by html and css<br><br><br></p>
+                    <strong class="Project_title ">
+                        <span>Portfolio</span>
+                        <a href="#Home" class="more_details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="Project_card">
+                <div class="Project_image">
+                    <img src="photos/counter.png">
+                </div>
+                <div class="Project_info">
+                    <p class="Project_category">Simple counter from 0 to 9 by using ic 4026<br><br></p>
+                    <strong class="Project_title ">
+                        <span>counter...</span>
+                        <a href="photos/m.d.c.png" class="more_details">More details</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="Contact" id="Contact">
+        <h2 class="title">Let's work togther </h2>
+        <div class="content__">
+        <div class="card">
+            <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info">
+                <h3>Phone</h3>
+                <p>01507098270</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="info">
+                <h3>Email</h3>
+                <p>ahmedfathyahmedsaber@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <p class="footer_title">Copyrights<span> @ Ahmed Fathy</span></p>
+        <div class="social_icon">
+            <a href="https://www.linkedin.com/in/ahmed-fathy-790a3b307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100011312980814&mibextid=JRoKGi"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ahmed_fathy_9?igsh=cHR2a21oNzJ1Zzhv"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
