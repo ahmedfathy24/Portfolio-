@@ -38,7 +38,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(photos/main_page.jpg) no-repeat;
+    background: url(/photos/main_page.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
